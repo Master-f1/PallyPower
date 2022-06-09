@@ -41,6 +41,7 @@ PallyPowerWarn.options = {
 			name = L["Show version"],
 			type = "execute",
 			desc = L["Show version"],
+			func = "ShowVersion",
 			guiHidden = true,
 			order = 998,
 		},

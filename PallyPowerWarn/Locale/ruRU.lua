@@ -156,5 +156,5 @@ L["Unknown"] = "Неизвестно"
 L["Players missing buffs: "] = "Нет баффа: "
 L["Players with wrong buffs: "] = "Неправильные баффы: "
 
-L[" Loaded. Use /ppw for options."] = " загружен. Введите /ppw для отображения списка команд."
+L[" Loaded. Use /ppw for options."] = " Введите /ppw для отображения списка команд."
 L["Unable to determine class_id for "] = "Невозможно определить класс для "

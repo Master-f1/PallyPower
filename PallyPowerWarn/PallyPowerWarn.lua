@@ -46,8 +46,7 @@ PallyPowerWarn = AceAddon:NewAddon("PallyPowerWarn",
 local meta_version = GetAddOnMetadata("PallyPowerWarn","Version")
 -- This doesn't get updated if this file isn't updated
 -- local revision = ("$Revision: 25 $"):sub(12, -3)
-local revision = GetAddOnMetadata("PallyPowerWarn","X-Curse-Packaged-Version")
-PallyPowerWarn.DisplayVersion = ("v%s-%s"):format(meta_version, revision)
+PallyPowerWarn.DisplayVersion = ("v%s"):format(meta_version)
 
 -- Add configmode support (i.e. OneButtonConfig)
 -- Create the global table if it does not exist yet
@@ -284,7 +283,7 @@ function PallyPowerWarn:OnInitialize()
 
 	-- Display version number when loading
 
-	self:Print(self.DisplayVersion.." Loaded. Use /ppw for options.")
+	self:Print(self.DisplayVersion..L[" Loaded. Use /ppw for options."])
 
 	-- ConfigMode (OneButtonConfig) off by default
 	self.configMode = false
