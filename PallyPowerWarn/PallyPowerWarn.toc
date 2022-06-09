@@ -1,27 +1,17 @@
 ## Interface: 30300
-## Title: Pally Power Warn |cff7fff7f -Ace3-|r
+## Title: PallyPowerWarn
 ## Notes: Provides warnings when PallyPower buffs expire.
-## Version: 0.9
-## Author: Stassart
+## Notes-ruRU: Напоминалка для паладина.
+## Version: 1.0
+## Author: Stassart,Master-f1
 ## RequiredDeps: PallyPower
 ## OptionalDeps: AceAddon-3.0, AceEvent-3.0, AceDB-3.0, AceLocale-3.0, AceConsole-3.0, AceConfig-3.0, AceGUI-3.0, AceTimer-3.0
-## X-Category: Paladin
-## X-eMail: pally (a) stassart o org
-## X-Website: 
 ## LoadOnDemand: 0
 ## SavedVariables: PallyPowerWarnDB
-## X-Embeds: Ace3
-## X-Curse-Packaged-Version: r26
-## X-Curse-Project-Name: PallyPowerWarn
-## X-Curse-Project-ID: pallypowerwarn
-## X-Curse-Repository-ID: wow/pallypowerwarn/mainline
 
-#@no-lib-strip@
 embeds.xml
-#@end-no-lib-strip@
 
 Locale\Locale.xml
 
 PallyPowerWarn.lua
 Options.lua
-
