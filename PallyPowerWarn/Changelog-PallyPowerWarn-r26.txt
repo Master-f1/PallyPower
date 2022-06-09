@@ -1,0 +1,195 @@
+------------------------------------------------------------------------
+r26 | stassart | 2010-09-09 21:50:07 +0000 (Thu, 09 Sep 2010) | 1 line
+Changed paths:
+   M /trunk/Options.lua
+
+Fixed copy and paste typo in Options.
+------------------------------------------------------------------------
+r25 | stassart | 2010-09-09 21:39:25 +0000 (Thu, 09 Sep 2010) | 1 line
+Changed paths:
+   M /trunk/Locale/enUS.lua
+   M /trunk/Options.lua
+   M /trunk/PallyPowerWarn.lua
+
+Added the ability to disable blessing checks if PvP flagged or based on location (arena, BG, WG, 5-man, raid, other).
+------------------------------------------------------------------------
+r24 | stassart | 2010-09-06 19:30:57 +0000 (Mon, 06 Sep 2010) | 1 line
+Changed paths:
+   M /trunk/embeds.xml
+
+Added Callbackhandler to embeds.xml
+------------------------------------------------------------------------
+r23 | stassart | 2010-09-05 23:41:14 +0000 (Sun, 05 Sep 2010) | 1 line
+Changed paths:
+   M /trunk/Options.lua
+   M /trunk/PallyPowerWarn.lua
+
+The revision string wasn't getting updated if PallyPowerWarn.lua wasn't changed. Now use the Curse revision from the toc.
+------------------------------------------------------------------------
+r22 | stassart | 2010-09-05 23:25:27 +0000 (Sun, 05 Sep 2010) | 1 line
+Changed paths:
+   M /trunk/Locale/enUS.lua
+   M /trunk/Options.lua
+   M /trunk/doc.txt
+
+Added more information to the options GUI to make it easier to know what options do.
+------------------------------------------------------------------------
+r21 | stassart | 2010-09-03 17:07:31 +0000 (Fri, 03 Sep 2010) | 1 line
+Changed paths:
+   M /trunk/PallyPowerWarn.lua
+
+Applied the same 1 second delay for checking Seal fade as for blessings so that you no longer get warned about your seal fading when you die.
+------------------------------------------------------------------------
+r20 | stassart | 2010-09-03 00:18:50 +0000 (Fri, 03 Sep 2010) | 1 line
+Changed paths:
+   M /trunk/.pkgmeta
+   M /trunk/PallyPowerWarn.lua
+
+When a buff fades from a player, delay checking them 1 second to see if they died.  Checking immediately wasn't working as the buff fading can be in the combatlog before the death and if you check if they are alive on the buff fade event they are still alive.
+------------------------------------------------------------------------
+r19 | stassart | 2010-09-01 21:22:29 +0000 (Wed, 01 Sep 2010) | 1 line
+Changed paths:
+   M /trunk/Locale/enUS.lua
+   M /trunk/Options.lua
+   M /trunk/PallyPowerWarn.lua
+   M /trunk/doc.txt
+
+Previous versions of PallyPowerWarn only checked if the PallyPower assigned buff was on a player.  Now if the assigned blessing isn't present, PallyPowerWarn checks to see if you have the wrong blessing on that player and an option to warn on wrong blessings. No longer warns about the correct buff fading when you manually cast the wrong blessing on someone (we will assume it is intentional).  Added more comments in the code.
+------------------------------------------------------------------------
+r18 | stassart | 2010-08-31 20:05:25 +0000 (Tue, 31 Aug 2010) | 1 line
+Changed paths:
+   M /trunk/Locale/enUS.lua
+   M /trunk/PallyPowerWarn.lua
+
+Fixed "Unknown" units missing buffs when a player dismounts and the pet first spawns or a player loads into the game.
+------------------------------------------------------------------------
+r17 | stassart | 2010-08-28 18:13:42 +0000 (Sat, 28 Aug 2010) | 1 line
+Changed paths:
+   M /trunk/Locale/enUS.lua
+   M /trunk/PallyPowerWarn.lua
+   M /trunk/PallyPowerWarn.toc
+   M /trunk/doc.txt
+
+Before PPW checked if Righteous Fury was off when it was supposed to be on, now PPW also check if it is on when it is supposed to be off.
+------------------------------------------------------------------------
+r16 | stassart | 2010-08-28 00:40:02 +0000 (Sat, 28 Aug 2010) | 1 line
+Changed paths:
+   M /trunk/.pkgmeta
+   M /trunk/Options.lua
+   M /trunk/PallyPowerWarn.lua
+   A /trunk/doc.txt
+
+Added doc.txt. Removed AceTimer library and added CallbackHandler.  Checking Imps only when not phase shifted wasn't working well, sometimes they would phase shift right after you check them which would be annoying.  So now we just ignore warning about buffing Imps.
+------------------------------------------------------------------------
+r15 | stassart | 2010-08-27 17:23:08 +0000 (Fri, 27 Aug 2010) | 1 line
+Changed paths:
+   M /trunk/PallyPowerWarn.lua
+
+Set svn:keywords on PallyPowerWarn.lua
+------------------------------------------------------------------------
+r14 | stassart | 2010-08-27 17:14:38 +0000 (Fri, 27 Aug 2010) | 1 line
+Changed paths:
+   M /trunk/.pkgmeta
+   M /trunk/Locale/enUS.lua
+   M /trunk/Options.lua
+   M /trunk/PallyPowerWarn.lua
+   M /trunk/embeds.xml
+
+Added /ppw version command. Fixed XML errors with libs on load.  Do not issue blessing fade messages if paladin is dead or if the target is out of range.
+------------------------------------------------------------------------
+r13 | stassart | 2010-08-27 00:01:44 +0000 (Fri, 27 Aug 2010) | 1 line
+Changed paths:
+   M /trunk/Locale/enUS.lua
+   A /trunk/Options.lua
+   M /trunk/PallyPowerWarn.lua
+   M /trunk/PallyPowerWarn.toc
+
+Added support for auras. No longer warns about phase shifted imps. No longer warns about buffs fading from a player who died. Fixed bug with not detecting class of out of range pets.
+------------------------------------------------------------------------
+r12 | stassart | 2010-08-26 07:00:48 +0000 (Thu, 26 Aug 2010) | 1 line
+Changed paths:
+   M /trunk/Locale/enUS.lua
+   M /trunk/PallyPowerWarn.lua
+
+Add support for checking Righteous Fury.
+------------------------------------------------------------------------
+r11 | stassart | 2010-08-26 00:36:44 +0000 (Thu, 26 Aug 2010) | 1 line
+Changed paths:
+   M /trunk/Locale/enUS.lua
+   M /trunk/PallyPowerWarn.lua
+
+Add support for seals. Allow disabling seal or blessing checking.
+------------------------------------------------------------------------
+r10 | stassart | 2010-08-25 20:59:52 +0000 (Wed, 25 Aug 2010) | 1 line
+Changed paths:
+   M /trunk/Locale/enUS.lua
+   M /trunk/PallyPowerWarn.lua
+
+Now able disable alerts about blessings fading while in combat.
+------------------------------------------------------------------------
+r9 | stassart | 2010-08-25 20:37:08 +0000 (Wed, 25 Aug 2010) | 1 line
+Changed paths:
+   M /trunk/Locale/enUS.lua
+   M /trunk/PallyPowerWarn.lua
+
+Added code for ready check event. Now supports pets.  Now checks the player (initially was only checking other people due to the way parties work.)
+------------------------------------------------------------------------
+r8 | stassart | 2010-08-25 00:28:53 +0000 (Wed, 25 Aug 2010) | 1 line
+Changed paths:
+   M /trunk/Locale/enUS.lua
+   M /trunk/PallyPowerWarn.lua
+
+Added a frequency option for alerts, by default not warning more often than every 5 seconds.
+------------------------------------------------------------------------
+r7 | stassart | 2010-08-24 23:13:36 +0000 (Tue, 24 Aug 2010) | 1 line
+Changed paths:
+   M /trunk/PallyPowerWarn.lua
+
+Use PallyPower class structures. No longer issue warning about a faded blessing if it was replaced by a new PallyPower assigned blessing.
+------------------------------------------------------------------------
+r6 | stassart | 2010-08-24 21:38:23 +0000 (Tue, 24 Aug 2010) | 1 line
+Changed paths:
+   M /trunk/.pkgmeta
+
+Fixes to pkgmeta.
+------------------------------------------------------------------------
+r5 | stassart | 2010-08-23 02:26:38 +0000 (Mon, 23 Aug 2010) | 1 line
+Changed paths:
+   M /trunk/Locale/enUS.lua
+   M /trunk/PallyPowerWarn.lua
+
+An initial foundation for checking for missing buffs.
+------------------------------------------------------------------------
+r4 | stassart | 2010-08-22 17:49:15 +0000 (Sun, 22 Aug 2010) | 1 line
+Changed paths:
+   M /trunk/Locale/enUS.lua
+   M /trunk/PallyPowerWarn.lua
+
+Added warning when one of your Blessings fades.
+------------------------------------------------------------------------
+r3 | stassart | 2010-08-22 16:04:19 +0000 (Sun, 22 Aug 2010) | 1 line
+Changed paths:
+   M /trunk/PallyPowerWarn.lua
+
+Currently prints PallyPower assignments on load as a test of being able to read PallyPower settings.
+------------------------------------------------------------------------
+r2 | stassart | 2010-08-20 13:34:52 +0000 (Fri, 20 Aug 2010) | 1 line
+Changed paths:
+   A /trunk/.pkgmeta
+   A /trunk/Locale
+   A /trunk/Locale/Locale.xml
+   A /trunk/Locale/enUS.lua
+   A /trunk/PallyPowerWarn.lua
+   A /trunk/PallyPowerWarn.toc
+   A /trunk/embeds.xml
+
+Initial UI. Nonfunctional.
+------------------------------------------------------------------------
+r1 | root | 2010-08-20 13:04:43 +0000 (Fri, 20 Aug 2010) | 1 line
+Changed paths:
+   A /branches
+   A /tags
+   A /trunk
+
+"pallypowerwarn/mainline: Initial Import"
+------------------------------------------------------------------------

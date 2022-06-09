@@ -1,0 +1,62 @@
+#### PallyPower Warn ####
+
+Author: Trelis @ Proudmoore
+
+This addon is designed for the Paladin class to work with PallyPower.
+
+Configuration is under Interface->Addons->PallyPowerWarn, or can be brought
+up with "/ppw ui" or "/ppwarn ui".  Command line help can be accessed by
+"/ppw" or "/ppwarn".
+
+Warnings can be enabled for:
+	* Blessings
+	* Seals
+	* Righteous Fury
+	* Auras
+
+Checks can be performed:
+	* When Blessings and Seals expire
+	* On /readycheck
+	* On entering combat
+	* On leaving combat
+
+Warning types:
+	* Sound
+	* Custom Window (moveable)
+	* Scrolling combat text
+	* Chat Frame (configurable which frame)
+
+Of course you can choose for yourself which functions you want.
+
+Tip: You can use your mouse scroll wheel over your aura, seal, and blessings in PallyPower to cycle through
+them.  To toggle Righteous Fury on and off in PallyPower hold down shift and scroll your mousewheel over your
+seal line.
+
+PallyPowerWarn will not warn you if another paladin has buffed your assigned buffs.  This is intentional as
+maybe you have more paladins than you need to provide all the blessings and someone else buffed for you.  It
+would be bad if this addon did warn about it and two paladins using this addon played tag with rebuffing.
+
+It is built on Ace3 for increased efficiency and performance, with low memory
+footprint.
+
+As of r22:
+Memory usage: 163K
+CPU usage: very little (I would have to measure it in ms per hour)
+
+Contributions, Credits, and Thanks:
+
+Aznamir and chkid for PallyPower
+
+Zarniwoop @ Proudmoore
+   For helping me test PallyPowerWarn and providing feedback on early alpha
+   versions.
+
+Rosekitty on Proudmoore
+For putting up with my addiction to this game
+
+Sparkle Magic guild on Proudmoore
+For being such great people, when you aren't making me fall out of my seat
+laughing :)
+
+And Blizzard Entertainment for making this wonderful game.
+
