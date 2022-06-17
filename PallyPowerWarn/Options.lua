@@ -54,7 +54,7 @@ PallyPowerWarn.options = {
 				info = {
 					type = "description",
 					order = 101,
-					name = "Version " .. PallyPowerWarn.DisplayVersion .. "\n\nThis addon provides warnings for Blessings, Seals, Righteous Fury, and Auras.",
+					name = L["Version "] .. PallyPowerWarn.DisplayVersion .. L["\n\nThis addon provides warnings for Blessings, Seals, Righteous Fury, and Auras."],
 				},
 				chatheader = {
 					order = 109,

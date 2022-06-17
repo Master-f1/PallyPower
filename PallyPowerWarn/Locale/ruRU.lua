@@ -33,11 +33,11 @@ L["Shows the Graphical User Interface"] = "Показывает графичес
 
 L["Show version"] = "Показать версию"
 
-L["Blessings"] = "Бафф"
+L["Blessings"] = "Благословения"
 L["Alerts for blessings."] = "Настройка оповещений для благословений."
 L["Enable checking blessings."] = "Включить проверку благословений."
 
-L["Seals"] = "Печать"
+L["Seals"] = "Печати"
 L["Alerts for seals."] = "Настройка оповещений для печатей."
 L["Enable checking seals."] = "Включить проверку печатей."
 
@@ -77,14 +77,14 @@ L["Frequency"] = "Частота"
 L["Do not warn more often than (5=default)"] = "Выберите промежуток оповещения в секундах."
 
 L["Location"] = "Местоположение"
-L["Battleground"] = "Поле боя"
-L["Warn when in battlegrounds."] = "Предупреждать на полях сражений."
+L["Battleground"] = "БГ"
+L["Warn when in battlegrounds."] = "Предупреждать на БГ."
 L["Arena"] = "Арена"
 L["Warn when in arena."] = "Предупреждать на арене."
 L["ZONE_WG"] = "ОЛО"
 L["Warn when in Wintergrasp."] = "Предупреждать на Озере Ледяных Оков."
 L["5-man"] = "Группа"
-L["Warn when in a 5-man instance."] = "Предупреждать в инстансе на 5 игроков."
+L["Warn when in a 5-man instance."] = "Предупреждать в подземелье на 5 игроков."
 L["Raid"] = "Рейд"
 L["Warn when in a raid instance."] = "Предупреждать при нахождении в рейде."
 L["Other"] = "Другое"
@@ -110,7 +110,7 @@ L["Help"] = [[
 
 Non-PallyPower Aura - предупредит, если ваша аура отличается от PallyPower.]]
 
-L["Display"] = "Дисплей"
+L["Display"] = "Отображение"
 L["Settings for how to display the message."] = "Настройки отображения сообщений."
 
 L["Color"] = "Цвет"
@@ -145,11 +145,11 @@ L["OUTLINE"] = "Тонкий"
 L["THICKOUTLINE"] = "Толстый"
 L["MONOCHROME"] = "Монохромный"
 
-L[" faded from "] = " исчез с "
+L[" faded from "] = " закончилось на "
 L["Missing Buffs"] = "Отсутствует бафф"
 L["Missing Seal"] = "Отсутствует печать"
 L["Missing Righteous Fury"] = "Отсутствует праведное неистовство"
-L["Righteous Fury is on"] = "Неистовство включено"
+L["Righteous Fury is on"] = "Праведное неистовство включено"
 L["Missing Aura"] = "Отсутствует аура"
 L["Unknown"] = "Неизвестно"
 
@@ -158,3 +158,6 @@ L["Players with wrong buffs: "] = "Неправильные баффы: "
 
 L[" Loaded. Use /ppw for options."] = " Введите /ppw для отображения списка команд."
 L["Unable to determine class_id for "] = "Невозможно определить класс для "
+L["Version "] = "Версия "
+L["\n\nThis addon provides warnings for Blessings, Seals, Righteous Fury, and Auras."] = "\n\nЭтот аддон предоставляет предупреждения о благословениях, печатях, праведном неистовстве и аурах."
+

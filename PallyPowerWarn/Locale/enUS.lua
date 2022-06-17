@@ -159,3 +159,5 @@ L["Players with wrong buffs: "] = true
 
 L[" Loaded. Use /ppw for options."] = true
 L["Unable to determine class_id for "] = true
+L["Version "] = "Version "
+L["\n\nThis addon provides warnings for Blessings, Seals, Righteous Fury, and Auras."] = "\n\nThis addon provides warnings for Blessings, Seals, Righteous Fury, and Auras."
