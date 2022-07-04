@@ -127,7 +127,7 @@ L["General Display settings and options for the Custom Message Frame."] = "Об�
 L["Chat Window Options"] = "Параметры окна чата"
 L["Chat Message"] = "Включить"
 L["Display message in Chat Frame."] = "Отображать сообщения в чате."
-L["Chat number"] = "Канал"
+L["Chat number"] = "Канал чата"
 L["Choose which chat to display the messages in (0=default)."] = "Выберите, в каком чате отображать сообщения."
 L["Error Frame"] = "Фрейм ошибок"
 L["Display message in Blizzard UI Error Frame."] = "Отображать сообщение во фрейме ошибок пользовательского интерфейса Blizzard."
