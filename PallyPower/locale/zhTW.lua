@@ -84,6 +84,26 @@ L:RegisterTranslations("zhTW", function() return
 	WAIT = "等待所有隊友",
 	WAIT_DESC = "是否等待所有隊友都在線上且於祝福範圍內才施放祝福",
 	["Water Elemental"] = "Water Elemental", -- Requires localization
+	top = "top", 
+	right = "right",
+	bottom = "bottom",
+	left = "left",
+	compactleft = "compact-left",
+	compactright = "compact-right",
+	Standard = "Standard",
+	Layout1 = "Layout 1",
+	Layout2 = "Layout 2",
+	Layout3 = "Layout 3",
+	Layout4 = "Layout 4",
+	Layout5 = "Layout 5",
+	None = "None",
+	Banto = "Banto",
+	BantoBarReverse = "BantoBarReverse",
+	Glaze = "Glaze",
+	Gloss = "Gloss",
+	Healbot = "Healbot",
+	oCB = "oCB",
+	Smooth = "Smooth",
 }
  
 end)
